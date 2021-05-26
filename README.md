@@ -2,8 +2,7 @@
 * https://naradesign.github.io/cls/
 
 ## CLS 개선 포인트.
-* 히어로 배너에 자리 표시자 적용하기.
-* 이미지 요소에 비율 힌트 제공하기.
-* 전역으로 글꼴 줄간격 설정하기.
-* 웹 폰트 미리 연결하기(preconnect).
-* CSS와 이미지 병렬 로딩하기(preload).
+* 히어로 배너에 자리 표시자(min-height, background) 적용하기.
+* 이미지 요소에 비율 힌트(aspect-ratio) 제공하기.
+* 웹 폰트와 유사한 장평, 자간 특성을 가진 대체 글꼴 지정하기.
+* 중요 자원 preconnect/preloading.
