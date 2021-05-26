@@ -17,9 +17,11 @@
             line-height: 1.5;
         }
         .heroBanner {
+            margin: 1em 0;
             min-height: 100px;
             background: silver;
         }
+        .heroBanner:empty { display: none; }
         .heroBanner__content {
             display: flex;
             justify-content: center;
@@ -39,9 +41,6 @@
 <body>
     <h1 class="heading">CLS 문제 해결하기</h1>
     <div id="hero-banner" class="heroBanner">
-        <template id="hero-banner-template">
-            <p class="heroBanner__content">HERO BANNER(height: 100px)</p>
-        </template>
     </div>
     <p>이 페이지는 웹 사이트의 <a href="//web.dev/cls/">CLS(Cumulative Layout Shift)</a> 문제를 유발하는 구성 요소를 포함하고 있다. 구글 크롬 <a href="//developers.google.com/web/tools/lighthouse">라이트하우스</a> 또는 <a href="//developers.google.com/speed/pagespeed/insights/?hl=ko">페이지 스피드 인사이트</a>를 통해 CLS 문제를 확인하고 개선해 보자. 이 문제를 해결하면 <a href="//developers.google.com/search/docs/guides/page-experience?hl=ko">고급 검색엔진 최적화</a>에 도움이 된다.</p>
     <picture class="picture">
@@ -52,6 +51,9 @@
         <img class="img" src="https://naradesign.github.io/html5/img/small.jpg" width="800" height="534" decoding="async" alt>
     </picture>
     <p>Good Luck!</p>
+    <template id="hero-banner-template">
+        <p class="heroBanner__content">HERO BANNER(height: 100px)</p>
+    </template>
     <script>
         // DO NOT FIX: 콘텐츠를 비동기로 받아오는 상황을 연출한 것으로 자바스크립트는 수정할 수 없음.
         const heroBannerContainer = document.querySelector('#hero-banner')
