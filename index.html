@@ -34,7 +34,7 @@
     </style>
 </head>
 <body>
-    <h1>CLS 문제 해결하기</h1>
+    <h1>CLS Issue demonstration</h1>
     <div id="hero-banner" class="heroBanner">
     </div>
     <p>This page contains components that cause the website to have cumulative layout change (CLS) issues. </p>
@@ -49,8 +49,7 @@
     <template id="hero-banner-template">
         <p class="heroBanner__content">HERO BANNER(height: 100px)</p>
     </template>
-    <script>
-        // DO NOT FIX: 콘텐츠를 비동기로 받아오는 상황을 연출한 것으로 자바스크립트는 수정할 수 없음.
+    <script>        
         const heroBannerContainer = document.querySelector('#hero-banner')
         const heroBannerTemplate = document.querySelector('#hero-banner-template')
         const heroBannerContent = document.importNode(heroBannerTemplate.content, true)
